@@ -201,6 +201,15 @@ body {
     display: table-cell;
     vertical-align: middle;  
 }
+
+#filterInterface {
+    display: none;
+}
+
+.instructions:not(:has(input:checked)) ~ div {
+    display: none;
+}
+
 .settings .question,
 .settings .switch {
     display: table-cell;
